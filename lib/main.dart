@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'appbar.dart';
 import 'body.dart';
+import 'footer.dart';
 
 void main() {
   runApp(
@@ -19,6 +20,7 @@ class MyApp extends StatelessWidget {
     return Scaffold(
       appBar: MyAppBar(title: Text('Tinder Waifu')),
       body: Center(child: MyBody()),
+      bottomNavigationBar: MyFooterBar(),
     );
   }
 }
